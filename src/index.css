@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.albums-container {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.album {
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+.album-img-container {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.album-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.album-txt-container {
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-title {
+  width: 90%;
+  text-align: center;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
