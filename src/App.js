@@ -5,11 +5,15 @@ function App() {
   return (
     <div>
       <ul>
-        <li><Link to="/">Albums</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/albums">Albums</Link></li>
         <li><Link to="/others">Others</Link></li>
       </ul>
       <Switch>
         <Route exact path="/">
+          <h1>Home</h1>
+        </Route>
+        <Route path="/albums">
           <AlbumsPage/>
         </Route>
         <Route path="/others">
