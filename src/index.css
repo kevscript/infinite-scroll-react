@@ -19,13 +19,26 @@ code {
 }
 
 .albums-container {
-  padding: 15px;
+  /* padding: 15px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  gap: 15px; */
+  padding: 15px;
+  margin: 0 auto;
+  display: grid;
   gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.album-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .album {
@@ -34,6 +47,7 @@ code {
   padding: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   overflow: hidden;

@@ -5,7 +5,11 @@ import AlbumCard from "./AlbumCard"
 function AlbumList({ albums }) {
   return (
     <div className="albums-container">
-      { albums && albums.map((album) => <AlbumCard album={album} key={uuidv4()} />) }
+      { albums && albums.map((album) => (
+        <div className="album-item" key={uuidv4()} >
+          <AlbumCard album={album} />
+        </div>
+      )) }
     </div>
   )
 }
