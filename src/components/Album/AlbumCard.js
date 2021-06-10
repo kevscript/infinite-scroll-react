@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 
-function AlbumCard({album}) {
+function AlbumCard({ album }) {
   return (
     <div className="album">
       <div className="album-img-container">
@@ -10,7 +10,7 @@ function AlbumCard({album}) {
         <p className="album-title">{album.title}</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default AlbumCard
+export default AlbumCard;
